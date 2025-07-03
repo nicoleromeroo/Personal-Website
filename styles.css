@@ -449,7 +449,7 @@ button:hover {
 .project-card h3 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--bg-color);
+  color: #fff;
 }
 
 .project-card p {
