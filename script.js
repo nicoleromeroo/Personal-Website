@@ -12,3 +12,16 @@ if (savedTheme) {
   document.documentElement.setAttribute('data-theme', savedTheme);
   toggleSwitch.checked = savedTheme === 'dark';
 }
+
+document.querySelector('.projects-link').addEventListener('click', () => {
+  document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
+});
+document.querySelector('.experience-link').addEventListener('click', () => {
+  document.querySelector('#experience').scrollIntoView({ behavior: 'smooth' });
+});
+document.querySelector('.home-link').addEventListener('click', () => {
+  document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
+});
+document.querySelector('.about-link').addEventListener('click', () => {
+  document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });
+});

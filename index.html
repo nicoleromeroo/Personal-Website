@@ -12,27 +12,26 @@
 </head>
 <body>
     <!-- Header: Nav Bar and Theme -->  
-<header>
-  <div class="nav-wrapper">
-    <div class="nav-bar">
-      <nav>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#features">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="theme-toggle">
-      <input type="checkbox" id="themeSwitch" />
-      <label for="themeSwitch" class="slider"></label>
-    </div>
-  </div>
-</header>
+    <header>
+        <div class="nav-bar">
+            <nav>
+            <ul class="nav-items">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+            </ul>
+            </nav>
+
+            <div class="theme-toggle">
+            <input type="checkbox" id="themeSwitch" />
+            <label for="themeSwitch" class="slider"></label>
+            </div>
+        </div>
+    </header>
 
     <!-- Hero: Title, Intro, Socials-->
-    <section class="hero">
+    <section id="hero" class="hero">
         <p class="small-header">Graduating Summer 2025 | Business & Code combined</p>
         <h1 class="title-header">
             Aspiring Full-Stack <br />
@@ -53,7 +52,7 @@
     </section>
 
     <!-- Feature Cards: About me-->
-    <section class="features grid-layout">
+    <section id="features" class="features grid-layout">
         <!-- Left Column: Strategic Thinker -->
         <div class="feature-card card-large image-card" style="background-image: url('images/background-1.png');">
             <h3 class="card-title-left">Strategic Thinker meets Full-Stack Developer</h3>
@@ -98,54 +97,108 @@
         </div>
     </section>
 
-
-        
-
-
-
+    <div> 
+        <h1 class="section-title">My <span class="purple-text">Projects</span></h1>
+    </div>
+    
     <!-- Projects: Including short description and live link-->
-    <section class="projects">
+    <section id="projects" class="projects">
+        
         <div class="project-card">
+            <img src="images/finova.png" alt="Screenshot of project" class="project-image">
             <h3>Bachelor Thesis: Investment GPT</h3>
             <p>Generate smart investment portfolios using GPT-powered insights in this AI-driven financial planning tool.</p>
-            <a href="https://example.com" target="_blank">Check Live Site</a>
+
+            <div class="project-footer">
+                <div class="tech-icons">
+                <i class="fab fa-python"></i>
+                    <a href="https://chat.openai.com/" target="_blank" aria-label="ChatGPT" >
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT Icon" class="tech-icon"/>
+                    </a>
+                    <a href="https://render.com/" target="_blank" aria-label="Render" >
+                    <img src="https://avatars.githubusercontent.com/u/44768496?s=200&v=4" alt="Render Icon" class="tech-icon"/>
+                    </a>
+                </div>
+                <a href="https://chatgpt.com/g/g-680cfb40980c81919b72cb4442569e36-finova" target="_blank" class="project-link">Check Live Site <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
         </div>
         <div class="project-card">
+            <img src="images/matcha-bot.png" alt="Screenshot of project" class="project-image">
             <h3>Matcha Notification Bot</h3>
-            <p>Get notified for matcha restocks with this bot that monitors stores and sends real-time alerts via Discord.</p>
-            <a href="https://example.com" target="_blank">Check Live Site</a>
+            <p>Get notified for matcha restocks with this bot. It monitors multiple stores and send real-time alerts via Discord.</p>
+
+            <div class="project-footer">
+                <div class="tech-icons">
+                <i class="fab fa-"></i>
+                <i class="fab fa-js-square"></i>
+                <i class="fas fa-database"></i>
+                </div>
+                <a href="https://discord.gg/unjsr7Xe" target="_blank" class="project-link">Join the Discord Channel <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
         </div>
         <div class="project-card">
+            <img src="images/profile-card.png" alt="Screenshot of project" class="project-image">
             <h3>Profile Card</h3>
-            <p>A profile card built with HTML and CSS — my very first step into the world of frontend development.</p>
-            <a href="https://example.com" target="_blank">Check Live Site</a>
+            <p>My very first own profile card built with HTML and CSS. This was one of my first steps into the world of front-end development.</p>
+
+            <div class="project-footer">
+                <div class="tech-icons">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <img src="https://seeklogo.com/images/N/netlify-logo-758722CDF4-seeklogo.com.png" alt="Netlify Icon" class="tech-icon" />
+
+                </div>
+                <a href="https://modern-profilee.netlify.app/" target="_blank" class="project-link">Check Live Site <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
         </div>
         <div class="project-card">
-            <h3>More To Come</h3>
+            <img src="images/more-to-come.jpg" alt="Screenshot of project" class="project-image">
+            <h3>More to come</h3>
             <p>More to build, more to come.</p>
+            <div class="project-footer"></div>
         </div>
     </section>
 
     <!-- Work Experience: From CV-->
-    <section class="experience">
-        <h1>My Work<span class="purple-text"> Experience</span></h1>
-        <div class="experience-card">
-            <h3>Finance & Controlling</h3>
-            <p>As a working student I managed invoicing, credit notes, and ERP data. Built Excel tools for automation and created dashboards to improve cost tracking.</p>
-        </div>
-        <div class="experience-card">
-            <h3>Digital Finance and Process Mining</h3>
-            <p>Standardized finance docs, built Excel models, and supported global projects with data validation and forecasting tools.</p>
-        </div>
-        <div class="experience-card">
-            <h3>Co-Founder – Wype UG</h3>
-            <p>Led financial planning, product development, and investor communication. Managed team operations and designed the user experience.</p>
-        </div>
-        <div class="experience-card">
-            <h3>Team Assistant</h3>
-            <p>Supported financial planning and internal tools. Created social media content and improved usability across workflows.</p>
-        </div>
+    <section id="experience" class="experience">
+        <h1 class="section-title">My <span class="purple-text">work experience</span></h1>
+            <div class="experience-grid">
+
+                <div class="experience-card icon-card">
+                <img src="images/finance.png" alt="Finance Icon" class="experience-icon" />
+                <div>
+                    <h3>Finance & Controlling</h3>
+                    <p>Managed invoicing, credit notes, and ERP data. Built Excel tools for automation and created dashboards to improve cost tracking.</p>
+                </div>
+                </div>
+
+                <div class="experience-card icon-card">
+                <img src="images/siemens.png" alt="Process Icon" class="experience-icon" />
+                <div>
+                    <h3>Digital Finance and Process Mining</h3>
+                    <p>Standardized finance docs, built Excel models, and supported global projects with data validation and forecasting tools.</p>
+                </div>
+                </div>
+
+                <div class="experience-card icon-card">
+                <img src="images/co-founder.png" alt="Co-Founder Icon" class="experience-icon" />
+                <div>
+                    <h3>Co-Founder – Wype UG</h3>
+                    <p>Led financial planning, product development, and investor communication. Managed team operations and designed the user experience.</p>
+                </div>
+                </div>
+
+                <div class="experience-card icon-card">
+                <img src="images/assistant.png" alt="Assistant Icon" class="experience-icon" />
+                <div>   
+                    <h3>Team Assistant</h3>
+                    <p>Supported financial planning and internal tools. Created social media content and improved usability across workflows.</p>
+                </div>
+                </div>
+
+            </div>
     </section>
+
 
     <!-- Footer: Just a small copyright -->
     <footer>
