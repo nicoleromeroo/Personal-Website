@@ -53,39 +53,55 @@
     </section>
 
     <!-- Feature Cards: About me-->
-    <section class="features">
-        <div class="card-large">
-            <h3>Strategic Thinker meets Full-Stack Developer</h3>
-            <p>With a background in finance and entrepreneurship, 
-                I build solutions that are both technically sound and business-smart.</p>
+    <section class="features grid-layout">
+        <!-- Left Column: Strategic Thinker -->
+        <div class="feature-card card-large image-card" style="background-image: url('images/background-1.png');">
+            <h3 class="card-title-left">Strategic Thinker meets Full-Stack Developer</h3>
+            <p class="card-text-left">With a background in finance and entrepreneurship. I like to build solutions that are technically sound and business-smart.</p>
         </div>
-        <div class="card-small">
-            <h3>Tech Enthusiast</h3>
-            <p>Tech enthusiast with a passion for development.</p>  
+
+        <!-- Top Middle: Small Card 1 -->
+        <div class="feature-card card-half image-card darker-bg" style="background-image: url('images/background-2.png');">
+            <h3 class="card-title-right">Life without technology? No, thank you!</h3>
+            <p class="card-text-right">Tech enthusiast with a passion for development.</p>
         </div>
-        <div class="card-small">
-            <h3>Global Mindset, Local Precision</h3>
-            <p>Having lived in multiple countries, I bring a global perspective to local challenges.</p>    
+
+        <!-- Top Right: Small Card 2 -->
+        <div class="feature-card card-half image-card" style="background-image: url('images/background-3.png');">
+            <h3 class="card-title-right">Always expanding my knowledge</h3>
+            <p class="card-text-right">Forever a student of code</p>
         </div>
-        <div class="card-small">
-            <h3>My Tech Stack</h3>
-            <ul class="tech-stack">
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>SQL</li>
-                <li>Python</li>
-                <li>Git</li>
-            </ul>
-        </div>
-        <div class="card-extra-large">
-            <h3>Always expanding my knowledge</h3>
-            <p>Forever a student of code</p>
+
+        <!-- Bottom Middle & Right: Tech Stack -->
+        <div class="feature-card card-full image-card" style="background-image: url('images/background-4.jpg');">
+            <h2 class="card-title-right-stack">My Tech Know-How</h2>
+            <div class="tech-section">
+                <div class="tech-group">
+                <p class="level intermediate">Intermediate</p>
+                    <ul class="tech-stack">
+                        <li>Java</li><li>Git</li><li>SQL</li>
+                    </ul>
+                </div>
+                <div class="tech-group">
+                    <p class="level basic">Basics</p>
+                    <ul class="tech-stack">
+                        <li>HTML</li><li>CSS</li><li>Python</li>
+                    </ul>
+                </div>
+                <div class="tech-group">
+                    <p class="level beginner">Beginner</p>
+                    <ul class="tech-stack">
+                        <li>JavaScript</li><li>React</li><li>Node.js</li><li>Docker</li>
+                    </ul>
+
+            </div>
         </div>
     </section>
+
+
+        
+
+
 
     <!-- Projects: Including short description and live link-->
     <section class="projects">
